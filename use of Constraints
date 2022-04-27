@@ -1,0 +1,10 @@
+create table person12(
+id number(5),
+firstname varchar(15) not null,
+lastname varchar(15) not null,
+aadhar number(12) not null UNIQUE,
+gender varchar(1) default 'M',
+age number(2) check (age>=18),
+constraint pk_12 PRIMARY KEY (id,firstname)
+);
+   
